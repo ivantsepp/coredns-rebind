@@ -1,8 +1,8 @@
-# rebind
+# coredns-rebind
 
 ## Name
 
-*rebind* - rebinds a domain from one IP address to another IP address to facilitate testing [DNS Rebinding vulnerabilities](https://en.wikipedia.org/wiki/DNS_rebinding).
+*coredns-rebind* - rebinds a domain from one IP address to another IP address to facilitate testing [DNS Rebinding vulnerabilities](https://en.wikipedia.org/wiki/DNS_rebinding).
 
 ## Description
 
@@ -50,7 +50,7 @@ The [manual](https://coredns.io/manual/toc/#what-is-coredns) will have more info
 A simple way to consume this plugin, is by adding the following on [plugin.cfg](https://github.com/coredns/coredns/blob/master/plugin.cfg), and recompile it as [detailed on coredns.io](https://coredns.io/2017/07/25/compile-time-enabling-or-disabling-plugins/#build-with-compile-time-configuration-file).
 
 ~~~
-rebind:github.com/ivantsepp/rebind
+rebind:github.com/ivantsepp/coredns-rebind
 ~~~
 
 Put this early in the plugin list, so that *rebind* is executed before any of the other plugins.
